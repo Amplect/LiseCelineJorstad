@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2020-08-07" view-index="0" gantt-divider-location="350" resource-divider-location="300" version="2.8.11" locale="nb_NO">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Navn" width="196" order="0"/>
+        <field id="tpd4" name="Startdato" width="74" order="1"/>
+        <field id="tpd5" name="Sluttdato" width="74" order="2"/>
+        <option id="color.recent">
+            <![CDATA[#ff3333 #00cc00 #ff6666 #66ccff #ffcc66 #ffcccc #ffccff #ccccff]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Navn" width="209" order="0"/>
+        <field id="1" name="Standardrolle" width="85" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="64" name="Start" color="#00cc00" meeting="true" start="2020-08-10" duration="0" complete="0" thirdDate="2020-08-10" thirdDate-constraint="0" expand="true"/>
+        <task id="0" name="Research" color="#ccccff" meeting="false" start="2020-08-10" duration="5" complete="0" thirdDate="2020-08-14" thirdDate-constraint="0" expand="true"/>
+        <task id="2" name="Idea development" color="#8cb6ce" meeting="false" start="2020-08-14" duration="6" complete="0" thirdDate="2020-07-30" thirdDate-constraint="0" expand="true"/>
+        <task id="23" name="Designing" color="#ffcccc" meeting="false" start="2020-08-24" duration="15" complete="0" thirdDate="2020-08-10" thirdDate-constraint="0" expand="true">
+            <task id="24" name="Coding" color="#8cb6ce" meeting="false" start="2020-08-24" duration="15" complete="0" thirdDate="2020-08-10" thirdDate-constraint="0" expand="true"/>
+            <task id="25" name="Photography" color="#ffccff" meeting="false" start="2020-08-24" duration="10" complete="0" thirdDate="2020-08-10" thirdDate-constraint="0" expand="true"/>
+            <task id="34" name="Visual identity" color="#66ccff" meeting="false" start="2020-08-24" duration="5" complete="0" thirdDate="2020-08-10" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="19" name="Content writing" color="#ffcc66" meeting="false" start="2020-08-24" duration="5" complete="0" thirdDate="2020-08-10" thirdDate-constraint="0" expand="true"/>
+        <task id="35" name="Testing" color="#ff6666" meeting="false" start="2020-09-07" duration="10" complete="0" thirdDate="2020-08-10" thirdDate-constraint="0" expand="true">
+            <task id="68" name="Double checking everything" color="#8cb6ce" meeting="false" start="2020-09-07" duration="10" complete="0" thirdDate="2020-08-07" thirdDate-constraint="0" expand="true"/>
+            <task id="69" name="Testing code" color="#8cb6ce" meeting="false" start="2020-09-14" duration="5" complete="0" thirdDate="2020-08-07" thirdDate-constraint="0" expand="true"/>
+            <task id="71" name="Spellchecks: content" color="#ff3333" meeting="false" start="2020-09-07" duration="3" complete="0" thirdDate="2020-08-07" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="62" name="Finished" color="#00cc00" meeting="true" start="2020-09-21" duration="0" complete="0" thirdDate="2020-08-10" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Lise Celine" function="Default:1" contacts="" phone=""/>
+        <resource id="1" name="Mr. Test" function="SoftwareDevelopment:4" contacts="" phone=""/>
+        <resource id="2" name="Jane Doe" function="SoftwareDevelopment:5" contacts="" phone=""/>
+        <resource id="3" name="Res Earcher" function="SoftwareDevelopment:8" contacts="" phone=""/>
+        <resource id="4" name="Ed Eveloper" function="SoftwareDevelopment:9" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="0" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="2" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="23" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="19" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="35" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="62" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="68" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="35" resource-id="1" function="SoftwareDevelopment:4" responsible="true" load="100.0"/>
+        <allocation task-id="19" resource-id="2" function="SoftwareDevelopment:5" responsible="false" load="100.0"/>
+        <allocation task-id="0" resource-id="3" function="SoftwareDevelopment:8" responsible="true" load="100.0"/>
+        <allocation task-id="24" resource-id="4" function="SoftwareDevelopment:9" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>
